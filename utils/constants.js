@@ -15,7 +15,7 @@ module.exports = {
       GRAFFITI: "superbridge",
       SEPOLIA: {
         CHAIN_ID: 11155111,
-        RPC_URL: "https://rpc.sepolia.org",
+        RPC_URL: "https://ethereum-sepolia-rpc.publicnode.com",
         EXPLORER_URL: "https://sepolia.etherscan.io",
         CONTRACT_ADDRESS: "0x6847251B63976B2c143c321Dd61d4823D6Bd54A2",
         METHOD_ID: "0xe11013dd"
