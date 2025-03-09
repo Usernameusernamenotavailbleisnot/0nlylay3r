@@ -1,0 +1,68 @@
+{
+  "enable_transfer": true,
+  "enable_contract_deploy": true,
+  "gas_price_multiplier": 1.2,
+  "max_retries": 5,
+  "base_wait_time": 10,
+  "transfer_amount_percentage": 90,
+  "contract": {
+    "contract_interactions": {
+      "enabled": true,
+      "count": {
+        "min": 3,
+        "max": 8
+      },
+      "types": ["setValue", "increment", "decrement", "reset", "contribute"]
+    }
+  },
+  "erc20": {
+    "enable_erc20": true,
+    "mint_amount": {
+      "min": 1000000,
+      "max": 10000000
+    },
+    "burn_percentage": 10,
+    "decimals": 18
+  },
+  "nft": {
+    "enable_nft": true,
+    "mint_count": {
+      "min": 2,
+      "max": 5
+    },
+    "burn_percentage": 20,
+    "supply": {
+      "min": 100,
+      "max": 500
+    }
+  },
+  "bridge": {
+    "enable_sepolia_to_onlylayer": true,
+    "enable_onlylayer_to_sepolia": true,
+    "sepolia_to_onlylayer": {
+      "min_amount": 0.01,
+      "max_amount": 0.02,
+      "wait_for_confirmation": true,
+      "max_wait_time": 300000
+    },
+    "onlylayer_to_sepolia": {
+      "min_amount": 0.001,
+      "max_amount": 0.002,
+      "wait_for_confirmation": false
+    },
+    "max_retries": 3
+  },
+  "swap": {
+    "enable_swap": true,
+    "swap_count": 3,
+    "swap_amount": {
+      "min": 0.00001,
+      "max": 0.0001
+    },
+    "delay": {
+      "min": 5,
+      "max": 30
+    },
+    "gas_price_multiplier": 1.1
+  }
+}
